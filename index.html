@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Spin Slider</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="top-section">
+    <header class="position-fixed ">
+        <nav>
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">lunch</a></li>
+                    <li><a href="#">Dinner</a></li>
+                </ul>
+            </div>
+            <div class="menu-items">
+                <div class="cart">
+                    <img src="/img/cart.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<section class="main-sections">
+        <div class="left-side-column">
+            <div class="text-title">
+                <h1><span>$32</span>
+                <br>
+                Green Goddess <br> Chicken Salad</h1>
+                <p>It is a non vegetarian salad which consists of the <br> green goddess dressing mixed with chicken, <br> peppers, olives and celery. </p>
+                <button class="btn-mein">ORDER NOW</button>
+            </div>
+        </div>
+        <div id="button-arrows" class="slider-button">
+            <img id="left-arrow" onclick="countClicksback()" src="./img/plus.png" alt="">
+            <img id="image-change" class="mein-img-dish" width="600px" src="/img/02.png" alt="">
+            <img id="right-arrow" onclick="countClicks()" src="./img/plus.png" alt="">
+        </div>
+        <div class="right-side-column">
+
+            <div id="food-rotate" class="Food-items rotate-0">
+                <svg width="562" height="562" viewBox="0 0 562 562" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="281" cy="281" r="280" stroke="#E87F1E" stroke-width="2" stroke-dasharray="10 20"/>
+                    </svg>
+                    <div id="img-items-list" class="img-items">
+                       
+                    <img class="menu-item icons-9" src="/img/9.png" alt="">
+                   
+                    <img class="menu-item icons-8 active" src="/img/8.png" alt="">
+                    <img class="menu-item icons-7" src="/img/7.png" alt="">
+                    <img class="menu-item icons-6" src="/img/6.png" alt="">
+                    <img class="menu-item icons-5" src="/img/05.png" alt="">
+                    <img class="menu-item icons-4" src="/img/04.png" alt="">
+                    <img class="menu-item icons-3" src="/img/03.png" alt="">
+                    <img class="menu-item icons-2 " src="/img/02.png" alt="">
+                    <img class="menu-item icons-1 " src="/img/01.png" alt="">
+                    </div>
+                    
+            </div>
+        </div>
+  </div>
+</section>
+<script src="./scripts.js"></script>
+</body>
+</html>
